@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact | Dot Dimensions</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <a class="logo" href="index.html"><img src="https://static.wixstatic.com/media/da5604_84d522a122744a3a984f44c5a98bbd48~mv2.png" alt="Dot Dimensions"></a>
+  <nav class="nav" aria-label="Main">
+    <a href="about.html">About</a>
+    <a href="projects.html">Projects</a>
+    <a href="index.html">Home</a>
+    <a href="contact.html" aria-current="page">Contact</a>
+  </nav>
+</header>
+<div class="page-title"><h1>Contact</h1></div>
+<main class="wrap contact">
+  <!-- TODO: set action to a form endpoint (e.g. Formspree, Netlify Forms) -->
+  <form action="#" method="post">
+    <label>First Name <input name="first_name" required></label>
+    <label>Last Name <input name="last_name" required></label>
+    <label>Email <input type="email" name="email" required></label>
+    <label>Subject <input name="subject"></label>
+    <label class="full">Message <textarea name="message" rows="6" placeholder="Leave us a message..." required></textarea></label>
+    <button type="submit">Submit</button>
+  </form>
+</main>
+</body>
+</html>
