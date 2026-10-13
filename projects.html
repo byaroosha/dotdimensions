@@ -18,36 +18,18 @@
 </header>
 <div class="page-title"><h1>Projects</h1></div>
 <main class="wrap">
-  <div class="grid" id="grid"></div>
+  <div class="grid">
+    <a class="card" href="projects/employer-household-dynamics.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_626214a7b3cf4063bc892427fe842dde~mv2.png/v1/fill/w_520,h_260,al_c,q_80/thumb.png" alt=""></div><span>Employer-Household Dynamic</span></a>
+    <a class="card" href="projects/urban-job-distribution.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_7d27b36ed8f94a6daabacb2c2925d42e~mv2.png/v1/fill/w_520,h_260,al_c,q_80/thumb.png" alt=""></div><span>Urban Job Distribution</span></a>
+    <a class="card" href="projects/los-angeles-building.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_1a77776534bd405e8c8e6bdc0977243b~mv2.jpg/v1/fill/w_520,h_260,al_c,q_80/thumb.jpg" alt=""></div><span>Los Angeles Building</span></a>
+    <a class="card" href="projects/city-dynamics.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_e1a19ff8b38e4aceb74ea37d11f36d77~mv2.jpg/v1/fill/w_520,h_260,al_c,q_80/thumb.jpg" alt=""></div><span>City Dynamic</span></a>
+    <a class="card" href="projects/socioeconomic.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_324a01b059724baf8d50e778a7541847~mv2.jpg/v1/fill/w_520,h_260,al_c,q_80/thumb.jpg" alt=""></div><span>Socioeconomic</span></a>
+    <a class="card" href="projects/trade.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_db1f65e97b5048fc978b165a1cff590b~mv2.jpg/v1/fill/w_520,h_260,al_c,q_80/thumb.jpg" alt=""></div><span>Trade</span></a>
+    <a class="card" href="projects/labor-supply.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_dc51bd1824b94d7eadb5e918ecb7571a~mv2.png/v1/fill/w_520,h_260,al_c,q_80/thumb.png" alt=""></div><span>Labor Supply</span></a>
+    <a class="card" href="projects/political-economy.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_1136277a01034794814ee6883ea3e26b~mv2.png/v1/fill/w_520,h_260,al_c,q_80/thumb.png" alt=""></div><span>Political Economy</span></a>
+    <a class="card" href="projects/orange-county-property-tax.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_34118eb86adf4ed4b4612ddf6693752a~mv2.png/v1/fill/w_520,h_260,al_c,q_80/thumb.png" alt=""></div><span>Orange County Property Tax</span></a>
+    <a class="card" href="projects/city-human-capital.html"><div class="thumb"><img src="https://static.wixstatic.com/media/da5604_ac2018072e6240bd8089df0e07da7502~mv2.png/v1/fill/w_520,h_260,al_c,q_80/thumb.png" alt=""></div><span>City Human Capital</span></a>
+  </div>
 </main>
-<div class="lightbox" id="lb" role="dialog" aria-modal="true" aria-label="Project image">
-  <img alt=""><p></p>
-</div>
-<script>
-const M = "https://static.wixstatic.com/media/";
-const projects = [
-  ["Employer-Household Dynamic", "da5604_626214a7b3cf4063bc892427fe842dde~mv2.png"],
-  ["Urban Job Distribution", "da5604_7d27b36ed8f94a6daabacb2c2925d42e~mv2.png"],
-  ["Los Angeles Building", "da5604_1a77776534bd405e8c8e6bdc0977243b~mv2.jpg"],
-  ["City Dynamic", "da5604_e1a19ff8b38e4aceb74ea37d11f36d77~mv2.jpg"],
-  ["Socioeconomic", "da5604_324a01b059724baf8d50e778a7541847~mv2.jpg"],
-  ["Trade", "da5604_db1f65e97b5048fc978b165a1cff590b~mv2.jpg"],
-  ["Labor Supply", "da5604_dc51bd1824b94d7eadb5e918ecb7571a~mv2.png"],
-  ["Political Economy", "da5604_1136277a01034794814ee6883ea3e26b~mv2.png"],
-  ["Orange County Property Tax", "da5604_34118eb86adf4ed4b4612ddf6693752a~mv2.png"],
-  ["City Human Capital", "da5604_ac2018072e6240bd8089df0e07da7502~mv2.png"],
-];
-const grid = document.getElementById("grid");
-const lb = document.getElementById("lb");
-for (const [name, file] of projects) {
-  const b = document.createElement("button");
-  b.className = "card"; b.style.cssText = "border:0;cursor:zoom-in;font:inherit;padding:0";
-  b.innerHTML = `<div class="thumb"><img src="${M}${file}/v1/fill/w_520,h_260,al_c,q_80/thumb.${file.split('.').pop()}" alt="${name}"></div><span>${name}</span>`;
-  b.onclick = () => { lb.querySelector("img").src = M + file; lb.querySelector("img").alt = name; lb.querySelector("p").textContent = name; lb.classList.add("open"); };
-  grid.append(b);
-}
-lb.onclick = () => lb.classList.remove("open");
-addEventListener("keydown", e => e.key === "Escape" && lb.classList.remove("open"));
-</script>
 </body>
 </html>
